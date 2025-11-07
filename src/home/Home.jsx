@@ -1,31 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
-// import { useState } from "react";
-// import SplashExplosion from "../splash/SplashExplosion";
-
-// import { h1 } from "motion/react-client";
-
+import "../styles/main.scss";
 export default function Home() {
-  // const [loaded, setLoaded] = useState(false);
   return (
     <>
-      {/* <div className="w-full h-screen bg-neutral-900 text-white overflow-hidden">
-        {!loaded && <SplashExplosion onFinish={() => setLoaded(true)} />}
-
-        {loaded && (
-          <div className="flex flex-col items-center justify-center h-full">
-            <h1 className="text-4xl font-bold mb-4">💥 Welcome!</h1>
-            <p className="text-lg text-gray-300">
-              Ini konten utama setelah efek ledakan selesai.
-            </p>
-          </div>
-        )}
-      </div> */}
-      <div className="text-7xl text-center mt-24 bg-amber-800">
-        <h1>Let Me Introduce</h1>
-        <h1>My self</h1>
-        <h1>As Developer.</h1>
+      <div className="w-full min-h-screen bg-black flex justify-center items-center">
+        <div className="text-7xl bg-[#d92323] py-50 px-50 w-full text-center flex flex-col">
+          <h1 className="home bg-black inline-block">Home.</h1>
+          <h1 className="task-board bg-black inline-block whitespace-nowrap">Task-Board.</h1>
+          <h1 className="about bg-black inline-block">About.</h1>
+          <h1 className="chat-room bg-black inline-block whitespace-nowrap">Chat-room.</h1>
+          <h1 className="project bg-black inline-block">Project.</h1>
+        </div>
       </div>
+      <div className="w-full h-screen bg-black"></div>
     </>
   );
 }
