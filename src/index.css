@@ -28,6 +28,32 @@ body {
   width: 100vw; 
 }
 
+.bubble-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 75%;
+}
+
+.bubble-bg {
+  position: absolute;
+  inset: 0;
+  background: #0d0d0d;
+  border-radius: 2rem;
+  transform: skewX(6deg) rotate(-2deg) translate(6px, 6px);
+  border: 1px solid white;
+}
+
+.bubble-content {
+  position: relative;
+  background: white;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  transform: skewX(6deg) rotate(-2deg);
+  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 /* .menu-home {
   text-shadow: 4px 4px 0px black;
 } */
