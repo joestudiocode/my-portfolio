@@ -1,12 +1,12 @@
 export default function ChatBubble({
-  message = "Pesan default di sini. Bubble ini menyesuaikan isi teks agar tetap proporsional dan tidak mepet ke dinding.",
+  message = "Pesan default di sini. Bubble ini menyesuaikan isi teks agar tetap proporsional dan tail terlihat lebih natural.",
   isUser = false, // false = kiri, true = kanan
 }) {
   const baseStyle = {
     fontFamily: "'Poppins', sans-serif",
     fontWeight: "500",
     fontSize: "13px",
-    padding: "6% 10%",
+    padding: "8% 12% 8% 16%", // Tambah padding kiri untuk tail kiri
     wordBreak: "break-word",
     lineHeight: "1.5",
   };
@@ -27,8 +27,8 @@ export default function ChatBubble({
         } border border-white`}
         style={{
           clipPath: isUser
-            ? "polygon(5% 90%, 95% 75%, 92% 55%, 96% 57%, 97% 49%, 100% 58%, 94% 34%, 93% 44%, 90% 40%, 87% 20%, 2% 29%, 5% 90%)"
-            : "polygon(3% 80%, 97% 70%, 94% 50%, 98% 52%, 98% 45%, 100% 48%, 95% 30%, 93% 38%, 90% 34%, 87% 15%, 1% 25%, 3% 80%)",
+            ? "polygon(0% 90%, 92% 75%, 96% 55%, 100% 57%, 100% 49%, 100% 58%, 92% 34%, 93% 44%, 90% 40%, 87% 20%, 0% 29%, 0% 90%)"
+            : "polygon(5% 80%, 97% 70%, 94% 50%, 98% 52%, 98% 45%, 100% 48%, 95% 30%, 93% 38%, 90% 34%, 87% 15%, 5% 25%, 5% 80%)",
         }}
       ></div>
 
@@ -40,8 +40,8 @@ export default function ChatBubble({
         style={{
           ...baseStyle,
           clipPath: isUser
-            ? "polygon(6% 88%, 94% 74%, 91% 55%, 95% 57%, 96% 49%, 99% 57%, 93% 36%, 92% 44%, 89% 40%, 86% 20%, 3% 29%, 6% 88%)"
-            : "polygon(4% 78%, 96% 69%, 93% 52%, 97% 53%, 97% 47%, 99% 50%, 94% 31%, 92% 39%, 89% 34%, 86% 16%, 2% 25%, 4% 78%)",
+            ? "polygon(0% 88%, 94% 74%, 91% 55%, 95% 57%, 96% 49%, 99% 57%, 93% 36%, 92% 44%, 89% 40%, 86% 20%, 0% 29%, 0% 88%)"
+            : "polygon(6% 78%, 96% 69%, 93% 52%, 97% 53%, 97% 47%, 99% 50%, 94% 31%, 92% 39%, 89% 34%, 86% 16%, 6% 25%, 6% 78%)",
         }}
       >
         {message}

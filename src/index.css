@@ -28,6 +28,21 @@ body {
   width: 100vw; 
 }
 
+.chat {
+
+  margin-top: 3rem;
+  height: 75px;
+  width: 255px;
+  transform: skew(20deg);
+}
+
+.chat2{
+  margin-top: rem;
+  align-items: end;
+  height: 60px;
+  width: 245px;
+   transform: skew(-20deg);
+}
 .bubble-wrapper {
   position: relative;
   display: inline-block;

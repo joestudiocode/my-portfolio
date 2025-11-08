@@ -20,8 +20,13 @@ export default function Home() {
           <h1 className="project bg-black inline-block">Project.</h1>
         </div>
       </div>
-      <div className="w-full h-screen bg-blue-800">
-        <ChatBubble/>
+      <div className="w-full h-screen bg-blue-800 flex">
+        <div className="chat bg-black">
+          <div className="chat2 bg-white">
+
+          </div>
+        </div>
+        {/* <ChatBubble/> */}
       </div>
     </>
   );
