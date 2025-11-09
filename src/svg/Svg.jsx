@@ -13,7 +13,7 @@ export default function ChatBubble({
 
   return (
     <div
-      className={`relative inline-block max-w-[60%] min-w-[160px] min-h-[70px] m-3 ${
+      className={`relative inline-block max-w-[60%] min-w-40 min-h-[70px] m-3 ${
         isUser ? "self-end" : "self-start"
       }`}
       style={{

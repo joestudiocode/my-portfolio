@@ -1,7 +1,26 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'HEAVYHEA';
+  src: url('fonts/HEAVYHEA.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Expose-Regular';
   src: url('fonts/Expose-Regular.otf') format('opentype');  
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Markin-LT-Ultra-Bold';
+  src: url('fonts/Markin-LT-Ultra-Bold.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Expose-Regular';
+  src: url('fonts//p5hatty-1.ttf') format('truetype');  
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +31,7 @@
   color-scheme: light dark;
   color: white;
   background-color: #0d0d0d;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,20 +47,27 @@ body {
   width: 100vw; 
 }
 
-.chat {
 
+h1 {
+  font-family: "Expose-Regular", serif;
+}
+.chat {
+  
+  margin-right: 4rem;
   margin-top: 3rem;
-  height: 75px;
-  width: 255px;
+  height: 70px;
+  width: 200px;
   transform: skew(20deg);
 }
 
 .chat2{
-  margin-top: rem;
-  align-items: end;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: -10px;
   height: 60px;
-  width: 245px;
-   transform: skew(-20deg);
+  line-height: 60px;
+  width: 200px;
+  transform: skew(-15deg);
 }
 .bubble-wrapper {
   position: relative;
