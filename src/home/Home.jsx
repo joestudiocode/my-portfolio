@@ -4,42 +4,37 @@ import { motion } from "motion/react";
 import "../styles/main.scss";
 import BubbleDiv from "../svg/Svg";
 import ChatBubble from "../svg/Svg";
+import Svg from "../assets/Svg";
 export default function Home() {
   return (
     <>
       <div className="w-full h-screen bg-[#d92323] flex justify-center items-center">
-        <div className="text-7xl pt-3  text-center flex flex-col">
-          <h1 className="home bg-[#0d0d0d] inline-block">
-            <a href="">Home</a>
+        <div className="text-7xl pt-3  text-center flex flex-col z-3">
+          <h1 className="home bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
+            <a href="">Home.</a>
           </h1>
-          <h1 className="task-board bg-[#0d0d0d] inline-block whitespace-nowrap">
-            Task-Board.
+          <h1 className="task-board bg-[#0d0d0d] inline-block whitespace-nowrap border-3 border-[#d92323]">
+            <a href="">Task-Board.</a>
           </h1>
-          <h1 className="about bg-[#0d0d0d] inline-block">About.</h1>
-          <h1 className="chat-room bg-[#0d0d0d] inline-block whitespace-nowrap">
-            Chat-room.
+          <h1 className="about bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
+            <a href="">About.</a>
           </h1>
-          <h1 className="project bg-[#0d0d0d] inline-block">Project.</h1> </div><div className="absolute">
-          <svg
-            width="131"
-            height="400"
-            viewBox="0 0 131 400"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M26.5266 397.374H15.4957H8.40446L7.09127 396.323L4.46487 393.171V390.02L9.71766 386.08L13.9199 378.726L25.2134 363.23L25.7387 351.937V331.451V315.955L26.5266 310.177L24.6881 291.005V268.943L23.3749 246.881L22.0617 222.456V214.051H21.0112L19.9606 216.415H12.8693L12.3441 214.839H8.92974L4.46487 209.061L2.36376 198.818L0 186.474V180.959L0.525279 166.251L1.05056 159.947L2.36376 142.613L5.51543 127.905L9.71766 106.894L14.4452 89.8227L18.3848 76.4281L23.9002 71.438L31.5167 69.5995L47.2751 65.1346L52.0026 58.306L52.5279 50.4268L48.063 43.0729L46.7498 42.5476L42.8102 37.8201V33.6179L43.5982 32.3047H44.9114V31.2541L44.1234 26.7892L42.285 26.5266L40.4465 24.4255L40.1838 22.0617V16.021L43.5982 10.5056L51.4773 3.67695L58.5686 0H66.4478L74.0643 3.41431L82.7314 9.9803L84.8326 14.4452L85.3578 23.1123L83.782 25.7387V28.6277H84.8326V29.6783L85.3578 34.1431L80.3677 42.0223L77.216 50.4268V60.4071L80.3677 65.3972L106.894 73.8017L112.147 85.6205L115.299 101.116L121.602 131.32L125.542 155.22V170.19L123.441 196.98H118.976V200.919L115.824 207.223L107.945 213.263H100.591L101.904 237.163L100.591 265.003L97.7019 300.46V334.865L100.591 347.472L97.7019 352.462V363.756L104.531 372.423L110.834 379.514L118.45 388.181V392.909L112.935 397.374H101.904L89.8227 390.808L86.1458 384.242L80.3677 377.15L72.2259 372.423L73.5391 359.553L70.65 347.472L66.9731 298.884L65.3972 252.659L61.195 217.728V249.245L57.518 278.398L52.2653 303.874L50.6894 313.066L52.2653 318.319L50.6894 347.472L54.1037 372.423L26.5266 397.374Z"
-              fill="#D92323"
-            />
-            <path
-              d="M31.2541 400H20.2232H13.1319L11.8187 398.949L9.19235 395.798V392.646L14.4451 388.707L18.6474 381.353L29.9409 365.857L30.4661 354.563V334.077V318.582L31.2541 312.804L29.4156 293.631V271.569L28.1024 249.508L26.7892 225.082V216.678H25.7386L24.6881 219.041H17.5968L17.0715 217.466H13.6572L9.19235 211.687L7.09123 201.445L4.72748 189.1V183.585L5.25276 168.877L5.77804 162.574L7.09123 145.24L10.2429 130.532L14.4451 109.521L19.1727 92.4491L23.1122 79.0545L28.6277 74.0644L36.2442 72.2259L52.0026 67.761L56.7301 60.9324L57.2554 53.0532L52.7905 45.6993L51.4773 45.174L47.5377 40.4465V36.2443L48.3256 34.9311H49.6388V33.8805L48.8509 29.4156L47.0124 29.153L45.174 27.0519L44.9113 24.6881V18.6474L48.3256 13.132L56.2048 6.30336L63.2961 2.6264H71.1753L78.7918 6.04072L87.4589 12.6067L89.56 17.0716L90.0853 25.7387L88.5095 28.3651V31.2541H89.56V32.3047L90.0853 36.7695L85.0952 44.6487L81.9435 53.0532V63.0335L85.0952 68.0236L111.622 76.4281L116.875 88.2469L120.026 103.743L126.33 133.946L130.269 157.846V172.817L128.168 199.606H123.703V203.546L120.551 209.849L112.672 215.89H105.318L106.632 239.79L105.318 267.63L102.429 303.086V337.492L105.318 350.098L102.429 355.089V366.382L109.258 375.049L115.561 382.141L123.178 390.808V395.535L117.662 400H106.632L94.5502 393.434L90.8732 386.868L85.0952 379.777L76.9533 375.049L78.2665 362.18L75.3775 350.098L71.7005 301.51L70.1247 255.286L65.9225 220.355V251.871L62.2455 281.024L56.9927 306.5L55.4169 315.693L56.9927 320.945L55.4169 350.098L58.8312 375.049L31.2541 400Z"
-              fill="#0D0D0D"
-            />
-          </svg>
+          <h1 className="chat-room bg-[#0d0d0d] inline-block whitespace-nowrap border-3 border-[#d92323]">
+            <a href="">Chat-room.</a>
+          </h1>
+          <h1 className="project bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
+            <a href="">Project.</a>
+          </h1>{" "}
         </div>
+
+        <div className="absolute z-10">
+          <Svg/>
         </div>
-        
-     
+        {/* <img className="absolute z-20 bottom-26 " src={mySvg} alt="My SVG" /> */}
+        <div className=""></div>
+        <div className="bg-[#0d0d0d] h-full w-full absolute z-1 bottom-0"></div>
+      </div>
+
       <div className="w-full h-screen bg-blue-800 text-black flex justify-end">
         <div>
           <div className="chat bg-black flex rounded-tr-lg">
