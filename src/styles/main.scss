@@ -3,7 +3,8 @@ $angle: 65deg;
 
 .home {
     color: #732424;
-    width: 12rem;
+    width: 13rem;
+    height: 4rem;
     text-shadow: 0px 0px 0 rgb(110,31,31),
                  -1px 1px 0 rgb(105,26,26),
                  -2px 2px 0 rgb(100,21,21),
@@ -19,13 +20,14 @@ $angle: 65deg;
                  -11px 11px 1px rgba(0,0,0,0.5),
                  0px 0px 10px rgba(0,0,0,.2);
 
-    transform: perspective(600px) rotateY(#{$angle}) translate(-150px, 10px) skewY(15deg);
+    transform: perspective(600px) rotateY(#{$angle}) translate(-190px, -10px) skewY(19deg);
     color: white;
 }
 
 .about {
     color: #732424;
-    width: 150px;
+    width: 10rem;
+    height: 4rem;
     text-shadow: 0px 0px 0 rgb(110,31,31),
                  -1px 0px 0 rgb(105,26,26),
                  -2px 0px 0 rgb(100,21,21),
@@ -40,15 +42,15 @@ $angle: 65deg;
                  -11px 0px 10px rgba(0,0,0,0.04),
                  -11px 0px 1px rgba(0,0,0,0.5),
                  0px 0px 10px rgba(0,0,0,.2);
-
-    margin-top:2rem;
-    transform: perspective(350px) rotateY(#{$angle}) translate(-150px, 15px) skewY(3deg);
+    transform: perspective(350px) rotateY(#{$angle}) translate(-140px, 10px) skewY(3deg);
     color: white;
 }
 
 .project {
     color: #732424;
-    width: 240px;
+    font-size: 4rem;
+    width: 12rem;
+    height: 3rem;
     text-shadow: 0px 0px 0 rgb(110,31,31),
                  -1px -1px 0 rgb(105,26,26),
                  -2px -2px 0 rgb(100,21,21),
@@ -63,16 +65,15 @@ $angle: 65deg;
                  -11px -11px 10px rgba(0,0,0,0.04),
                  -11px -11px 1px rgba(0,0,0,0.5),
                  0px 0px 10px rgba(0,0,0,.2);
-    margin-top:2rem;
-    transform: perspective(450px) rotateY(#{$angle}) translate(-150px, 25px) skewY(-12deg);
+    transform: perspective(450px) rotateY(#{$angle}) translate(-140px, 10px) skewY(-18deg);
     color: white;
 }
 
 .task-board {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #732424;
-    height: 3rem;
-    width: 17rem;
+    height: 2rem;
+    width: 9rem;
     text-shadow: 0px 0px 0 rgb(110,31,31),
                  1px 0px 0 rgb(105,26,26),
                  2px 0px 0 rgb(100,21,21),
@@ -87,15 +88,15 @@ $angle: 65deg;
                  11px 0px 10px rgba(0,0,0,0.04),
                  11px 0px 1px rgba(0,0,0,0.5),
                  0px 0px 10px rgba(0,0,0,.2);
-    margin-top:2rem;
-    transform: perspective(450px) rotateY(-#{$angle}) translate(150px, 25px) skewY(-18deg);
+    transform: perspective(600px) rotateY(-#{$angle}) translate(230px, -20px) skewY(-12deg);
     color: white;
 }
 
 .chat-room {
+    font-size: 3rem;
     color: #732424;
-    height: -2rem;
-    width: 15rem;
+    height: 3rem;
+    width: 12rem;
     text-shadow: 0px 0px 0 rgb(110,31,31),
                  1px -1px 0 rgb(105,26,26),
                  2px -2px 0 rgb(100,21,21),
@@ -110,8 +111,7 @@ $angle: 65deg;
                  11px -11px 10px rgba(0,0,0,0.04),
                  11px -11px 1px rgba(0,0,0,0.5),
                  0px 0px 10px rgba(0,0,0,.2);
-    margin-top:2rem;
-    transform: perspective(450px) rotateY(-#{$angle}) translate(150px, 25px) skewY(2deg);
+    transform: perspective(450px) rotateY(-#{$angle}) translate(185px, 20px) skewY(10deg);
         color: white;
 }
 
