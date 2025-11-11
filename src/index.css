@@ -1,24 +1,6 @@
+@import './styles/fonts.css';
+
 @import "tailwindcss";
-
-@font-face {
-  font-family: 'HEAVYHEA';
-  src: url('/src/assets/fonts/HEAVYHEA.ttf') format('truetype');  
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Expose-Regular';
-  src: url('/src/assets/fonts/Expose-Regular.otf') format('opentype');  
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Markin-LT-Ultra-Bold';
-  src: url('/src/assets/fonts/Markin-LT-Ultra-Bold.ttf') format('truetype');  
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 :root {
   font-family: "Markin-LT-Ultra-Bold", serif;
