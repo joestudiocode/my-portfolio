@@ -2,8 +2,6 @@
 import { motion } from "motion/react";
 
 import "../styles/main.scss";
-import BubbleDiv from "../svg/Svg";
-import ChatBubble from "../svg/Svg";
 import Svg from "../assets/Svg";
 export default function Home() {
   return (
