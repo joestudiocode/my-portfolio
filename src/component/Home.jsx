@@ -1,26 +1,155 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "motion/react";
 
+import React from "react";
 import Svg from "./Svg";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react"
+
+const DURATION = 0.25;
+
+const STAGGER = 0.025;
+
+
+const FlipLink = ({ children, href }) => {
+
+  return (
+
+    <motion.a
+
+      initial="initial"
+
+      whileHover="hovered"
+
+      href={href}
+
+      className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-4xl md:text-4xlxl lg:text-3xl border-5 border-[#d92323] bg-[#0d0d0d] h-12"
+
+      style={{
+
+        lineHeight: 1,
+        letterSpacing: "0.2em",
+
+      }}
+
+    >
+
+      <div>
+
+        {children.split("").map((l, i) => (
+
+          <motion.span
+
+            variants={{
+
+              initial: {
+
+                y: 0,
+
+              },
+
+              hovered: {
+
+                y: "-100%",
+
+              },
+
+            }}
+
+            transition={{
+
+              duration: DURATION,
+
+              ease: "easeInOut",
+
+              delay: STAGGER * i,
+
+            }}
+
+            className="inline-block"
+
+            key={i}
+
+          >
+
+            {l}
+
+          </motion.span>
+
+        ))}
+
+      </div>
+
+      <div className="absolute inset-0">
+
+        {children.split("").map((l, i) => (
+
+          <motion.span
+
+            variants={{
+
+              initial: {
+
+                y: "100%",
+
+              },
+
+              hovered: {
+
+                y: 0,
+
+              },
+
+            }}
+
+            transition={{
+
+              duration: DURATION,
+
+              ease: "easeInOut",
+
+              delay: STAGGER * i,
+
+            }}
+
+            className="inline-block"
+
+            key={i}
+
+          >
+
+            {l}
+
+          </motion.span>
+
+        ))}
+
+      </div>
+
+    </motion.a>
+
+  );
+
+};
+
 export default function Home() {
   return (
     <>
+    
       <div className="w-full h-screen bg-[#d92323] flex justify-center items-center">
         <div className="text-7xl pt-3  text-center flex flex-col z-3">
-          <h1 className="home bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
-            <a href="">Home.</a>
+          <h1 className="home">
+            <FlipLink href="/">Home</FlipLink>
           </h1>
-          <h1 className="task-board bg-[#0d0d0d] inline-block whitespace-nowrap border-3 border-[#d92323]">
-            <a href="">Task-Board.</a>
+          <h1 className="task-board">
+            <FlipLink href="/">Task-Board</FlipLink>
           </h1>
-          <h1 className="about bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
-            <a href="">About.</a>
+          <h1 className="about">
+           <FlipLink href="/about">About</FlipLink>
           </h1>
-          <h1 className="chat-room bg-[#0d0d0d] inline-block whitespace-nowrap border-3 border-[#d92323]">
-            <a href="">Chat-room.</a>
+          <h1 className="chat-room">
+            <FlipLink href="/">Chat-room</FlipLink>
           </h1>
-          <h1 className="project bg-[#0d0d0d] inline-block border-3 border-[#d92323]">
-            <a href="">Project.</a>
+          <h1 className="project">
+            <FlipLink href="/">Project</FlipLink>
           </h1>{" "}
         </div>
         <div className="absolute z-10">

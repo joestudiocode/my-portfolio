@@ -35,7 +35,7 @@ export default function Svg() {
         />
       </svg>
       <img
-        className="absolute z-20 top-0 hover:opacity-0"
+        className="absolute z-20 top-0"
         src={mySvg}
         alt="My SVG"
       />
