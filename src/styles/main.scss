@@ -3,7 +3,7 @@ $angle: 65deg;
 
 .home {
     
-    transform: perspective(600px) rotateY(#{$angle}) translate(-200px, -10px) skewY(10deg);
+    transform: perspective(600px) rotateY(#{$angle}) translate(-205px, -10px) skewY(6deg);
     color: white;
 }
 

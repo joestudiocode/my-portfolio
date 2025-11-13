@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "p5hatty-1", serif;
+  font-family: "Satoshi-Variable", serif;
   color-scheme: light dark;
   color: white;
   background-color: #0d0d0d;
@@ -23,13 +23,15 @@ body {
   width: 100vw; 
 }
 
+.HEAD {
+  font-family:"Satoshi-Variable",sans-serif;
+  /* font-family:"HEAVYHEA",sans-serif; */
+}
 .menu {
   font-family: "Expose-Regular", serif;
   /* font-family: "HEAVYHEA", serif; */
 }
-.info {
-  font-family:"Satoshi-Variable",sans-serif;
-}
+
 
 
 .chat {

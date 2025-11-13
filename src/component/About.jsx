@@ -1,13 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 export const About = () => {
   return (
     <>
-      <div className="z-10 fixed top-0 w-full bg-amber-800 flex items-center p-4">
-        <a className="" href="/">
-          Back to menu
-        </a>
-      </div>
+      <Navbar title="Back to Menu" link="/" />
       <div className="sm:text-4xl md:text-4xl lg:text-3xl m-4 w-full h-full flex flex-col justify-center items-center">
         <div className="h-screen flex justify-center items-center">
           <p className="max-w-3xl">

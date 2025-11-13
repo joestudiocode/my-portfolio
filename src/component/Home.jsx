@@ -2,6 +2,7 @@ import React from "react";
 import Svg from "./Svg";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+import Navbar from "./Navbar";
 
 const DURATION = 0.25;
 
@@ -64,7 +65,7 @@ const FlipLink = ({ children, href }) => {
 
               delay: STAGGER * i,
             }}
-            className="inline-block"
+            className="inline-block bg-[#f2e852] text-[#0d0d0d]"
             key={i}
           >
             {l}
@@ -78,8 +79,9 @@ const FlipLink = ({ children, href }) => {
 export default function Home() {
   return (
     <>
+    <Navbar title="Menu" link="/" />
       <div className="w-full h-screen bg-[#d92323] flex justify-center items-center">
-        <div className="text-7xl pt-4 text-center items-center flex flex-col z-10 menu">
+        <div className="text-7xl text-center items-center flex flex-col z-10 menu">
           <h1 className="home">
             <FlipLink href="/">Home</FlipLink>
           </h1>
