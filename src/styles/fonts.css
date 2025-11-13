@@ -15,4 +15,14 @@
   src: url('/src/assets/fonts/Markin-LT-Ultra-Bold.ttf') format('truetype');  
   font-weight: normal;
   font-style: normal;
+}@font-face {
+  font-family: 'p5hatty-1';
+  src: url('/src/assets/fonts/p5hatty-1.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'p5hatty-1';
+  src: url('/src/assets/fonts/Satoshi-Variable.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
 }

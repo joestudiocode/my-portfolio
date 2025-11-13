@@ -3,12 +3,11 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Markin-LT-Ultra-Bold", serif;
-  
+  font-family: "p5hatty-1", serif;
   color-scheme: light dark;
   color: white;
   background-color: #0d0d0d;
-  
+  overflow-x: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,11 +23,15 @@ body {
   width: 100vw; 
 }
 
-
-h1 {
+.menu {
   font-family: "Expose-Regular", serif;
   /* font-family: "HEAVYHEA", serif; */
 }
+.info {
+  font-family:"Satoshi-Variable",sans-serif;
+}
+
+
 .chat {
   
   margin-right: 4rem;

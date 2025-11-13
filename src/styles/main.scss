@@ -1,32 +1,32 @@
 
-// $angle: 65deg;
+$angle: 65deg;
 
-// .home {
-//     height: 100px;
-//     transform: perspective(400px) rotateY(#{$angle}) translate(-170px, -10px) skewY(12deg);
-//     color: white;
-// }
-
-// .about {
-//     transform: perspective(400px) rotateY(#{$angle}) translate(-180px, 10px) skewY(2deg);
-//     color: white;
-// }
-
-// .project {
+.home {
     
-//     transform: perspective(700px) rotateY(#{$angle}) translate(-120px, 10px) skewY(-19deg);
-//     color: white;
-// }
+    transform: perspective(600px) rotateY(#{$angle}) translate(-200px, -10px) skewY(10deg);
+    color: white;
+}
 
-// .task-board {
-    
-//     transform: perspective(1000px) rotateY(-#{$angle}) translate(256px, -20px) skewY(-12deg);
-//     color: white;
-// }
+.about {
+    transform: perspective(850px) rotateY(#{$angle}) translate(-300px, 0px) skewY(-4deg);
+    color: white;
+}
 
-// .chat-room {
+.project {
     
-//     transform: perspective(900px) rotateY(-#{$angle}) translate(230px, 20px) skewY(10deg);
-//     color: white;
-// }
+    transform: perspective(680px) rotateY(#{$angle}) translate(-228px, 10px) skewY(-19deg);
+    color: white;
+}
+
+.task-board {
+    
+    transform: perspective(1400px) rotateY(-#{$angle}) translate(335px, -40px) skewY(-8deg);
+    color: white;
+}
+
+.chat-room {
+    
+    transform: perspective(900px) rotateY(-#{$angle}) translate(275px, 20px) skewY(6deg);
+    color: white;
+}
 
