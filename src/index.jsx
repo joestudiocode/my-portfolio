@@ -10,7 +10,6 @@ import Navbar from "./component/Navbar";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-    <Navbar/>
       <App/>
     </BrowserRouter>
   </StrictMode>

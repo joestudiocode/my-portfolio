@@ -4,6 +4,7 @@
 
 :root {
   font-family: "Satoshi-Variable", serif;
+  box-sizing: border-box;
   color-scheme: light dark;
   color: white;
   background-color: #0d0d0d;
@@ -24,9 +25,11 @@ body {
 }
 
 .HEAD {
-  font-family:"Satoshi-Variable",sans-serif;
+  font-family:"Outfit-Bold",sans-serif;
+  /* font-family:"Satoshi-Variable",sans-serif; */
   /* font-family:"HEAVYHEA",sans-serif; */
 }
+
 .menu {
   font-family: "Expose-Regular", serif;
   /* font-family: "HEAVYHEA", serif; */

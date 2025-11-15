@@ -25,4 +25,9 @@
   src: url('/src/assets/fonts/Satoshi-Variable.ttf') format('truetype');  
   font-weight: normal;
   font-style: normal;
+}@font-face {
+  font-family: 'Outfit-Bold';
+  src: url('/src/assets/fonts/static/Outfit-Bold.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
 }
