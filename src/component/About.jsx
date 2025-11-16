@@ -1,10 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
 import image from "../assets/image.png";
+import BackCard from "../assets/BackCard.png"
+import ProfilCard from "../assets/Profilcard.png"
 export const About = () => {
   return (
     <>
       <Navbar title="Back to Menu" link="/" />
+<div className="relative">
+  <div className="z-30"><img src={BackCard} alt="" /></div>
+  <div className=""><img src={ProfilCard} alt="" /></div>
+</div>
       <div className="w-full h-full bg-blue-900">
         <div className="sm:text-4xl md:text-4xl lg:text-3xl w-full h-full flex flex-col justify-center items-center bg-red-500">
           <div className="h-screen flex justify-between items-center gap-24">
@@ -14,7 +20,7 @@ export const About = () => {
               crafting clean and interactive web experiences.
             </p>{" "}
             <img
-              class="cursor-pointer"
+              className="cursor-pointer"
               src={image}
               alt="my-profile"
               width={400}

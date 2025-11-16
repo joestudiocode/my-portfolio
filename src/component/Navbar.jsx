@@ -7,7 +7,7 @@ export default function Navbar({ title, link }) {
   return (
     <div className="z-30 fixed top-0 left-0 flex items-center justify-between m-4 text-white p-2 rounded-full w-full pr-20">
       <div className="">
-        <a href={link} className="HEAD">
+        <a href={link} className="HEAD hover:opacity-80">
           {title}
         </a>
       </div>
@@ -16,7 +16,7 @@ export default function Navbar({ title, link }) {
           <img
             src={InstagramIcon}
             alt="Instagram Icon"
-            className="w-4 h-4 invert"
+            className="w-4 h-4 invert hover:opacity-80"
           />
         </a>
         <a href="https://id.linkedin.com/in/jaoharbahydwitanto" target="_blank">
