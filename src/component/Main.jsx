@@ -16,7 +16,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap font-black uppercase sm:text-5xl md:text-5xl lg:text-5xl border-[#d92323] bg-[#0d0d0d] border-t-8"
+      className="relative block overflow-hidden font-black uppercase sm:text-5xl md:text-5xl lg:text-5xl border-[#d92323] bg-[#0d0d0d] min-w-max"
       style={{
         letterSpacing: "0.2em",
       }}
@@ -82,36 +82,44 @@ export default function Main() {
   return (
     <>
       <Navbar title="Menu" link="/" />
-     
-      <div className="w-full h-screen bg-[#d92323] flex justify-center items-center">
-        <div className="text-7xl text-center items-center flex flex-col z-10 menu">
-          <h1 className="home">
+      <div className="w-full min-h-screen bg-[#0d0d0d] flex justify-center items-center">
+        <div className="flex md:hidden flex-col gap-4 text-center z-20">
+          <a href="/home" className="text-3xl font-black">
+            Home
+          </a>
+          <a href="/about" className="text-3xl font-black">
+            About-Me
+          </a>
+          <a href="/" className="text-3xl font-black">
+            Project
+          </a>
+          <a href="/" className="text-3xl font-black">
+            Task-Board
+          </a>
+          <a href="/" className="text-3xl font-black">
+            Chat-Room
+          </a>
+        </div>
+        <div className="hidden md:flex text-center items-center flex-col z-10 menu">
+          <h1 className="home min-w-max whitespace-nowrap">
             <FlipLink href="/home">Home</FlipLink>
-          </h1>
-          <h1 className="task-board ">
-            <FlipLink href="/">TasK-Board</FlipLink>
           </h1>
           <h1 className="about">
             <FlipLink href="/about">About-Me</FlipLink>
           </h1>
-          <h1 className="chat-room ">
-            <FlipLink href="/">Chat-room</FlipLink>
-          </h1>
           <h1 className="project ">
             <FlipLink href="/">Project</FlipLink>
           </h1>
+          <h1 className="task-board ">
+            <FlipLink href="/">TasK-Board</FlipLink>
+          </h1>
+          <h1 className="chat-room ">
+            <FlipLink href="/">Chat-room</FlipLink>
+          </h1>
         </div>
-        <div
-          className="h-120 w-120 absolute pointer-events-none z-10
-"
-        >
-          <Svg />
-        </div>
-
-        <div className="bg-[#0d0d0d] h-full w-full absolute bottom-0"></div>
       </div>
-
-      <div className="w-full h-screen bg-blue-800 text-black flex justify-end">
+      console.log(window.innerHeight)
+      <div className="w-full min-h-screen bg-blue-800 text-black flex justify-end">
         <div>
           <div className="chat bg-black flex rounded-tr-lg">
             <div className="chat2 bg-white rounded-tr-lg">Tes text</div>

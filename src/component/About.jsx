@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import image from "../assets/image.png";
+
 import BackCard from "../assets/Backcard.png";
 import ProfilCard from "../assets/Profilcard.png";
 
@@ -8,37 +8,30 @@ export const About = () => {
   return (
     <>
       <Navbar title="Back to Menu" link="/" />
-      <div className="relative w-[250px] h-[250px] bg-amber-600">
-        <img
-          src={BackCard}
-          alt=""
-          width={250}
-          height={250}
-          className="absolute top-0 left-0 z-20"
-        />
-        <img
-          src={ProfilCard}
-          alt=""
-          width={250}
-          height={250}
-          className="absolute top-0 left-0 z-10"
-        />
-      </div>
       <div className="w-full h-full bg-blue-900">
-        <div className="sm:text-4xl md:text-4xl lg:text-3xl w-full h-full flex flex-col justify-center items-center bg-red-500">
+        <div className="sm:text-4xl md:text-4xl lg:text-3xl w-full h-full flex flex-col justify-center items-center bg-[#0d0d0d] ">
           <div className="h-screen flex justify-between items-center gap-24">
             <p className="max-w-3xl ">
               Hi, I’m Jaohar Bahy Dwi Tanto —
               <br />a Informatics Management graduate who loves <br />
               crafting clean and interactive web experiences.
             </p>{" "}
-            <img
-              className="cursor-pointer"
-              src={image}
-              alt="my-profile"
-              width={400}
-              height={400}
-            />
+            <div className="relative w-[250px] h-[250px]">
+              <img
+                src={BackCard}
+                alt=""
+                width={250}
+                height={250}
+                className="absolute top-0 left-0 z-20 drop-shadow-[0_0_1px_white]"
+              />
+              <img
+                src={ProfilCard}
+                alt=""
+                width={250}
+                height={250}
+                className="absolute top-0 left-0 z-10 drop-shadow-[0_0_1px_white]"
+              />
+            </div>
           </div>
           <div className="h-screen flex justify-center items-center">
             <p className="max-w-3xl">

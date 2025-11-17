@@ -1,32 +1,55 @@
 
 $angle: 65deg;
 
+
 .home {
-    
-    transform: perspective(600px) rotateY(#{$angle}) translate(-205px, -10px) skewY(6deg);
+    position: relative;
+    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, -30px) skewY(-10deg);
     color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px; 
+    left: -20px;       
+    width: 130px;       
+    height: 10px;       
+    background: #ff3434; 
+    transform: skewX(80deg); 
+    z-index: -1;       
+    border-radius: 2px;
+  } 
 }
 
 .about {
-    transform: perspective(850px) rotateY(#{$angle}) translate(-300px, 0px) skewY(-4deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, -10px) skewY(-10deg);
     color: white;
+      &::before {
+    content: "";
+    position: absolute;
+    top: -8px;       
+    left: -20px;       
+    width: 260px;        
+    height: 10px;      
+    background: #ff3434;
+    transform: skewX(80deg); 
+    z-index: -1;      
+    border-radius: 2px;
+  }
 }
 
-.project {
-    
-    transform: perspective(680px) rotateY(#{$angle}) translate(-228px, 10px) skewY(-19deg);
+.project {   
+    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 10px) skewY(-10deg);
     color: white;
 }
 
 .task-board {
-    
-    transform: perspective(1400px) rotateY(-#{$angle}) translate(335px, -40px) skewY(-8deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 30px) skewY(-10deg);
     color: white;
 }
 
 .chat-room {
     
-    transform: perspective(900px) rotateY(-#{$angle}) translate(275px, 20px) skewY(6deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 50px) skewY(-10deg);
     color: white;
 }
 
