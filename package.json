@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "predeploy":"pnpm run build",
-    "deploy": "gh-pages -d dish"
+    "deploy": "gh-pages -d dist"
 
   },
   "dependencies": {

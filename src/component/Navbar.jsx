@@ -5,7 +5,7 @@ import LinkedInIcon from "../assets/icons/Linkedin.svg";
 import InstagramIcon from "../assets/icons/Instagram.svg";
 export default function Navbar({ title, link }) {
   return (
-    <div className="z-30 fixed top-0 left-0 flex items-center justify-between m-4 text-white p-2 rounded-full w-full pr-20">
+    <div className="z-30 fixed top-0 left-0 flex items-center justify-between text-white p-6 rounded-full w-screen">
       <div className="">
         <a href={link} className="HEAD hover:opacity-80">
           {title}

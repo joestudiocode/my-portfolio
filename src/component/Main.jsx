@@ -1,6 +1,3 @@
-import React from "react";
-import Svg from "./Svg";
-
 // import github from "../assets/icons/Github.svg"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
@@ -83,20 +80,20 @@ export default function Main() {
     <>
       <Navbar title="Menu" link="/" />
       <div className="w-full min-h-screen bg-[#0d0d0d] flex justify-center items-center">
-        <div className="flex md:hidden flex-col gap-4 text-center z-20">
-          <a href="/home" className="text-3xl font-black">
+        <div className="flex md:hidden flex-col gap-2 text-center z-20 menu font-black text-5xl">
+          <a href="/home" className="">
             Home
           </a>
-          <a href="/about" className="text-3xl font-black">
+          <a href="/about" className="">
             About-Me
           </a>
-          <a href="/" className="text-3xl font-black">
+          <a href="/" className="">
             Project
           </a>
-          <a href="/" className="text-3xl font-black">
+          <a href="/" className="">
             Task-Board
           </a>
-          <a href="/" className="text-3xl font-black">
+          <a href="/" className="">
             Chat-Room
           </a>
         </div>
@@ -108,7 +105,7 @@ export default function Main() {
             <FlipLink href="/about">About-Me</FlipLink>
           </h1>
           <h1 className="project ">
-            <FlipLink href="/">Project</FlipLink>
+            <FlipLink href="/project">Project</FlipLink>
           </h1>
           <h1 className="task-board ">
             <FlipLink href="/">TasK-Board</FlipLink>
@@ -118,8 +115,7 @@ export default function Main() {
           </h1>
         </div>
       </div>
-      console.log(window.innerHeight)
-      <div className="w-full min-h-screen bg-blue-800 text-black flex justify-end">
+      <div className="w-full h-screen bg-blue-800 text-black flex justify-end">
         <div>
           <div className="chat bg-black flex rounded-tr-lg">
             <div className="chat2 bg-white rounded-tr-lg">Tes text</div>

@@ -15,11 +15,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.menu * {
-  outline: 1px solid red;
-  
-}
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,6 +55,12 @@ body {
   transform: skew(-15deg);
 }
 
+.element {
+  height: 100dvh;
+  padding: 2em;
+  background: #df5757;
+  border: 15px solid blue;
+}
 /* .menu-home {
   text-shadow: 4px 4px 0px black;
 } */
