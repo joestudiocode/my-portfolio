@@ -4,7 +4,7 @@ $angle: 65deg;
 
 .home {
     position: relative;
-    transform: perspective(850px) rotateY(#{$angle}) translate(-250px, -40px) skewY(-10deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-50px, -40px) skewY(-10deg);
     color: white;
   &::before {
     content: "";
@@ -21,7 +21,7 @@ $angle: 65deg;
 }
 
 .about {
-    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, -20px) skewY(-10deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-50px, -20px) skewY(-10deg);
     color: white;
       &::before {
     content: "";
@@ -38,7 +38,7 @@ $angle: 65deg;
 }
 
 .project {   
-    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 10px) skewY(-10deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-50px, 10px) skewY(-10deg);
     color: white;
       &::before {
     content: "";
@@ -54,7 +54,7 @@ $angle: 65deg;
 }
 
 .task-board {
-    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 40px) skewY(-10deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-50px, 40px) skewY(-10deg);
     color: white;
       &::before {
     content: "";
@@ -71,7 +71,7 @@ $angle: 65deg;
 
 .chat-room {
     
-    transform: perspective(850px) rotateY(#{$angle}) translate(-205px, 70px) skewY(-10deg);
+    transform: perspective(850px) rotateY(#{$angle}) translate(-50px, 70px) skewY(-10deg);
     color: white;
       &::before {
     content: "";

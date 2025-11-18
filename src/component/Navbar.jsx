@@ -3,40 +3,44 @@ import GithubIcon from "../assets/icons/Github.svg";
 import WhatsAppIcon from "../assets/icons/WhatsApp.svg";
 import LinkedInIcon from "../assets/icons/Linkedin.svg";
 import InstagramIcon from "../assets/icons/Instagram.svg";
+import { Link } from "react-router-dom";
 export default function Navbar({ title, link }) {
   return (
-    <div className="z-30 fixed top-0 left-0 flex items-center justify-between text-white p-6 rounded-full w-screen">
-      <div className="">
-        <a href={link} className="HEAD hover:opacity-80">
+    <nav className="z-30 fixed top-0 left-0 flex items-center justify-between text-white px-10 py-4 rounded-full w-screen">
+      <nav className="">
+        <Link to={link} className="HEAD hover:opacity-80">
           {title}
-        </a>
-      </div>
+        </Link>
+      </nav>
       <div className="flex gap-10">
-        <a href="https://www.instagram.com/jaoharfs_/" target="_blank">
+        <Link href="https://www.instagram.com/jaoharfs_/" target="_blank">
           <img
             src={InstagramIcon}
             alt="Instagram Icon"
             className="w-4 h-4 invert hover:opacity-80"
           />
-        </a>
-        <a href="https://id.linkedin.com/in/jaoharbahydwitanto" target="_blank">
+        </Link>
+        <Link
+          href="https://id.linkedin.com/in/jaoharbahydwitanto"
+          target="_blank"
+        >
           <img
             src={LinkedInIcon}
             alt="LinkedIn Icon"
             className="w-4 h-4 invert"
           />
-        </a>
-        <a href="https://github.com/joestudiocode" target="_blank">
+        </Link>
+        <Link href="https://github.com/joestudiocode" target="_blank">
           <img src={GithubIcon} alt="Github Icon" className="w-4 h-4 invert" />
-        </a>
-        <a href="https://wa.me/11234567890" target="_blank">
+        </Link>
+        <Link href="https://wa.me/11234567890" target="_blank">
           <img
             src={WhatsAppIcon}
             alt="WhatsApp Icon"
             className="w-4 h-4 invert"
           />
-        </a>
+        </Link>
       </div>
-    </div>
+    </nav>
   );
 }

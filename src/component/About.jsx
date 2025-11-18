@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
-
 import BackCard from "../assets/Backcard.png";
 import ProfilCard from "../assets/Profilcard.png";
+import Main from "./Main";
+
 
 export const About = () => {
   return (
     <>
       <Navbar title="Back to Menu" link="/" />
-
-      <div className="sm:text-4xl w-full h-screen flex justify-center items-center bg-[#0d0d0d]">
+      <div className="sm:text-4xl w-[80%] h-screen flex justify-center items-center bg-[#0d0d0d]">
         <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center p-6 bg-amber-300 gap-16">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl">
             Hi, I’m Jaohar Bahy Dwi Tanto —

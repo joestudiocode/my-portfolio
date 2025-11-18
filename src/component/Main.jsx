@@ -1,26 +1,28 @@
 // import github from "../assets/icons/Github.svg"
-// eslint-disable-next-line no-unused-vars
+import { Outlet } from "react-router-dom";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const DURATION = 0.25;
-
 const STAGGER = 0.025;
 
-const FlipLink = ({ children, href }) => {
+const MotionLink = motion.create(Link);
+
+const FlipLink = ({ children, to }) => {
   return (
-    <motion.a
+    <MotionLink
       initial="initial"
       whileHover="hovered"
-      href={href}
-      className="relative block overflow-hidden font-black uppercase sm:text-5xl md:text-5xl lg:text-5xl border-[#d92323] bg-[#0d0d0d] min-w-max"
+      to={to}
+      className="relative block overflow-hidden font-black uppercase sm:text-4xl md:text-4xl lg:text-5xl min-w-max"
       style={{
         letterSpacing: "0.2em",
       }}
     >
       <div>
         {children.split("").map((l, i) => (
-          <motion.span
+          <motion.div
             variants={{
               initial: {
                 y: 0,
@@ -41,13 +43,13 @@ const FlipLink = ({ children, href }) => {
             key={i}
           >
             {l}
-          </motion.span>
+          </motion.div>
         ))}
       </div>
 
       <div className="absolute inset-0">
         {children.split("").map((l, i) => (
-          <motion.span
+          <motion.div
             variants={{
               initial: {
                 y: "100%",
@@ -68,60 +70,56 @@ const FlipLink = ({ children, href }) => {
             key={i}
           >
             {l}
-          </motion.span>
+          </motion.div>
         ))}
       </div>
-    </motion.a>
+    </MotionLink>
   );
 };
 
 export default function Main() {
   return (
     <>
-      <Navbar title="Menu" link="/" />
-      <div className="w-full min-h-screen bg-[#0d0d0d] flex justify-center items-center">
-        <div className="flex md:hidden flex-col gap-2 text-center z-20 menu font-black text-5xl">
-          <a href="/home" className="">
-            Home
-          </a>
-          <a href="/about" className="">
-            About-Me
-          </a>
-          <a href="/" className="">
-            Project
-          </a>
-          <a href="/" className="">
-            Task-Board
-          </a>
-          <a href="/" className="">
-            Chat-Room
-          </a>
-        </div>
-        <div className="hidden md:flex text-center items-center flex-col z-10 menu">
+     <Navbar title="Menu" link="/" />
+      <div className="w-full min-h-screen bg-[#0d0d0d] flex justify-start items-center px-10 gap-x-4">
+        <div className="hidden md:flex text-start flex-col menu gap-y-1">
           <h1 className="home min-w-max whitespace-nowrap">
-            <FlipLink href="/home">Home</FlipLink>
+            <FlipLink to="/home">Home</FlipLink>
           </h1>
           <h1 className="about">
-            <FlipLink href="/about">About-Me</FlipLink>
+            <FlipLink to="/about">About-Me</FlipLink>
           </h1>
           <h1 className="project ">
-            <FlipLink href="/project">Project</FlipLink>
+            <FlipLink to="/project">Project</FlipLink>
           </h1>
           <h1 className="task-board ">
-            <FlipLink href="/">TasK-Board</FlipLink>
+            <FlipLink to="/about">TasK-Board</FlipLink>
           </h1>
           <h1 className="chat-room ">
-            <FlipLink href="/">Chat-room</FlipLink>
+            <FlipLink to="/about">Chat-room</FlipLink>
           </h1>
         </div>
+
+        <div className="h-screen flex flex-col justify-center items-center w-[80%] p-10">
+          <h1 className="text-3xl">Hi I'm Jaohar Bahy Dwi tanto</h1>
+          <p>
+            Passionate and detail-driven Frontend Developer with a strong focus
+            on creating clean, responsive, and interactive user experiences.
+            Skilled in React, JavaScript, and modern web technologies, with a
+            deep interest in transforming ideas into intuitive UI. Dedicated to
+            building fast, scalable, and visually engaging interfaces that blend
+            aesthetics with functionality.
+          </p>
+        </div>
       </div>
-      <div className="w-full h-screen bg-blue-800 text-black flex justify-end">
+     
+      {/* <div className="w-full h-screen bg-blue-800 text-black flex justify-end">
         <div>
           <div className="chat bg-black flex rounded-tr-lg">
             <div className="chat2 bg-white rounded-tr-lg">Tes text</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

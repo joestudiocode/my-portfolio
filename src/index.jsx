@@ -5,6 +5,7 @@ import "./styles/main.scss"
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import Navbar from "./component/Navbar";
+import Main from "./component/Main";
 // import Navbar from "./nav/Navbar.jsx";
 
 createRoot(document.getElementById("root")).render(
